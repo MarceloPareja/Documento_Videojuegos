@@ -1,0 +1,29 @@
+\section{Análisis de riesgos}
+
+\begin{table}[H]
+    \centering
+    \small
+    \begin{tabular}{|p{0.5cm}|p{3.2cm}|p{1.8cm}|p{1.2cm}|p{1.2cm}|p{1.0cm}|p{3.5cm}|}
+        \hline
+        \textbf{\#} & \textbf{Riesgo} & \textbf{Categoría} & \textbf{Probabilidad} & \textbf{Impacto} & \textbf{Nivel} & \textbf{Mitigación} \\
+        \hline
+        1 & Problemas de rendimiento en Unity (FPS bajo con múltiples enemigos en pantalla) & Técnico & Media & Alto & Alto & Usar pooling de objetos; limitar entidades activas simultáneas; pruebas de rendimiento desde etapas tempranas. \\
+        \hline
+        2 & Bugs en la detección de colisiones (balas, obstáculos, enemigos) & Técnico & Media & Medio & Medio & Definir capas de colisión claras en Unity desde el inicio. Incluir casos de prueba específicos en QA. \\
+        \hline
+        3 & Dificultad en implementar la IA del automóvil enemigo (movimiento entre vías, lógica de escape) & Técnico & Media & Alto & Alto & Desarrollar prototipo de IA simplificado primero; iterar con patrones de movimiento predefinidos antes de lógica compleja. \\
+        \hline
+        4 & Retrasos en modelado 3D (personajes, moto, vehículos, escenario) & Equipo & Media & Medio & Medio & Usar assets de Unity Asset Store como placeholders y reemplazarlos con modelos propios en iteraciones posteriores. \\
+        \hline
+        5 & Creep de alcance: agregar features no planificadas (nuevas armas, niveles, mecánicas extra) & Alcance & Media & Medio & Medio & Congelar el alcance del MVP al inicio de junio. Nuevas features van a un backlog post-entrega. \\
+        \hline
+        6 & No completar el loop principal antes de la fase de QA en julio & Cronograma & Media & Alto & Alto & Establecer hito al fin de junio con loop jugable. Si no se cumple, recortar niveles secundarios para mantener el core. \\
+        \hline
+        7 & Sobrecosto o fallo del hardware de desarrollo & Presupuesto & Baja & Medio & Bajo & Hacer backups en la nube (GitHub/Drive). Usar laboratorios de la ESPE como alternativa en caso de fallo. \\
+        \hline
+    \end{tabular}
+    \caption{Análisis de riesgos y mitigación}
+    \label{tab:riesgos}
+\end{table}
+
+\noindent\textit{Referencias de nivel de riesgo:} Alto = probabilidad e impacto elevados; Medio = controlable con seguimiento; Bajo = impacto mínimo o muy improbable.
