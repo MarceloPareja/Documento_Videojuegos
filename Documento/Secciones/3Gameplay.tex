@@ -1,5 +1,6 @@
 \section{Gameplay}
-El gameplay consistirá de 2 hileras de una autopista, en estos se desarrollará el nivel, los personajes principales estarán en una motocicleta, con perspectiva en primera persona y perseguirán un automóvil como se muestra en la figura 1.
+
+El gameplay consiste en dos carriles de una autopista donde se desarrolla la acción principal. Los personajes se desplazan sobre una motocicleta con perspectiva en primera persona, persiguiendo a un vehículo objetivo, tal como se muestra en la figura 1.
 
 \begin{figure}[H]
     \centering
@@ -8,9 +9,9 @@ El gameplay consistirá de 2 hileras de una autopista, en estos se desarrollará
     \label{fig:escenario_principal}
 \end{figure}
 
-Para el loop principal, el automóvil que está frente al jugador es el enemigo principal, para ganar el nivel, se debe derrotar a este automóvil que se mueve entre las vías al dispararle con las armas con las que se cuenta, mientras se esquivan otras balas que apuntan al jugador y objetos que obstaculizan al jugador, sean objetos inmóviles o enemigos como se muestra en la figura 2.
+Para el loop principal, el automóvil ubicado al frente actúa como el enemigo principal del nivel. Para alcanzar la victoria, el jugador debe destruirlo disparando con el armamento disponible mientras esquiva proyectiles y obstáculos fijos o móviles en la vía, como se ilustra en la figura 2.
 
-Otra condición para perder es el no generar suficiente daño al enemigo principal, y este escapa a su base segura fortificada, por lo que se perderá el nivel y lo único que se conseguirá es el dinero recolectado para intentarlo de nuevo con mejoras en el personaje. Este se mostrará con una barra visual en la parte superior de la pantalla como en la figura 3.
+La condición de derrota se activa si el jugador no logra infligir suficiente daño al enemigo antes de que este escape a su base segura; en dicho escenario, el nivel se pierde pero se conserva el dinero recolectado para invertir en mejoras futuras. Este progreso se visualiza mediante una barra de estado superior, representada en la figura 3.
 
 \begin{figure}[H]
     \centering
@@ -22,11 +23,11 @@ Otra condición para perder es el no generar suficiente daño al enemigo princip
 \begin{figure}[H]
     \centering
     % \includegraphics[width=0.6\textwidth]{Imagenes/figura3.png}
-    \caption{Barra para perder el nivel}
+    \caption{Barra de estado y condición de derrota}
     \label{fig:barra_perder}
 \end{figure}
 
-Los enemigos al ser eliminados y obstáculos al ser destruidos podrán dejar en la vía munición para las armas y algo de dinero, usada para mejoras para la moto, las armas y velocidad punta, necesarias para continuar atacando al automóvil enemigo.
+Al eliminar enemigos y destruir obstáculos, el jugador obtiene munición y recursos monetarios en la vía, fundamentales para adquirir mejoras de velocidad, resistencia y armamento.
 
 \begin{figure}[H]
     \centering
@@ -35,4 +36,4 @@ Los enemigos al ser eliminados y obstáculos al ser destruidos podrán dejar en 
     \label{fig:pantalla_mejoras}
 \end{figure}
 
-Finalmente, como en la figura 4, es la pantalla para las mejoras y selección de nivel, al seleccionar y con el dinero suficiente, será posible generar mejoras antes mencionadas, y el mapa en el centro será el selector de niveles, con lo que el jugador podrá seleccionar el nivel a jugar.
+Finalmente, la pantalla de mejoras y selección de nivel (figura 4) permite al usuario gestionar los fondos acumulados y seleccionar el siguiente desafío dentro del mapa interactivo.

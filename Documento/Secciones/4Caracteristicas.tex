@@ -1,13 +1,14 @@
 \section{Características}
-El juego tendrá 3 zonas principales y una última zona con el jefe final, el objetivo es disparar al jefe antes de que escape a su zona segura y obtener la recompensa. El gameplay se realizará en su mayoría con el teclado con teclas WASD, para los disparos serán con el espacio para la comodidad de los jugadores, no existirá un acelerador controlado por el jugador, la velocidad punta se conseguirá poco a poco mientras se desarrolla el nivel, esta se verá reducida cuando el jugador se choque contra un obstáculo que le hará perder velocidad.
 
-Los objetos recogibles dentro del juego serán munición para las armas, para continuar disparando, o dinero que sueltan los enemigos, estas herramientas les permitirán disparar a los enemigos y los jefes, y el dinero será esencial para mejoras del personaje. Las mejoras por su parte se conseguirán con el dinero recogido, con ello podrá presentarse 3 tipos de mejoras y 3 niveles de mejora por categoría, daño de las armas, velocidad punta a la que puede alcanzar la moto y la resistencia de la moto antes de descomponerse. En cuanto las armas, estas serán solo 3, un revólver, un fusil como segundo nivel y finalmente un AK-47 como la última mejora, como en la figura 5.
+El juego cuenta con tres zonas principales y una zona final correspondiente al enfrentamiento con el jefe. El objetivo principal es neutralizar al jefe antes de que escape a su refugio. Los controles principales se implementaron utilizando el teclado (teclas WASD para el movimiento y la barra espaciadora para el disparo), priorizando la comodidad y accesibilidad. No existe un acelerador manual; la velocidad punta se incrementa progresivamente conforme avanza el nivel, y disminuye cada vez que el jugador colisiona con un obstáculo.
+
+Los objetos recolectables incluyen munición para mantener la capacidad ofensiva y dinero dejado por los enemigos abatidos. Este sistema de progresión ofrece tres categorías de mejora con tres niveles cada una: daño de armas, velocidad máxima y resistencia estructural de la motocicleta. El arsenal se compone de tres armas progresivas: revólver, fusil de asalto y un AK-47 como mejora máxima, tal como se observa en la figura 5.
 
 \begin{figure}[H]
     \centering
     % \includegraphics[width=0.6\textwidth]{Imagenes/figura5.png}
-    \caption{Armas de mejoras}
+    \caption{Arsenal y sistema de mejoras}
     \label{fig:armas_mejoras}
 \end{figure}
 
-Finalmente, para ganar en el juego se deberá capturar a todos los jefes, cada nivel se perderá cuando la moto se descompone, perdiendo todo el dinero recolectado, o cuando el jugador no alcance a destruir el coche del jefe pero el dinero recolectado se quedará con el usuario.
+Para completar el juego con éxito, es necesario derrotar a todos los jefes de zona. Un nivel se considera fallido si la motocicleta sufre daños críticos (perdiendo el dinero de la sesión actual) o si el jefe logra escapar, aunque en este último caso se retiene el dinero recolectado hasta el momento.
